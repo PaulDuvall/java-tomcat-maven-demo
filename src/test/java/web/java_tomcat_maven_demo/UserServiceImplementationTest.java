@@ -1,6 +1,5 @@
 package web.java_tomcat_maven_demo;
 
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.testng.annotations.Test;
@@ -12,7 +11,8 @@ public class UserServiceImplementationTest {
 	public void test() {
 		ApplicationContext context = new AnnotationConfigApplicationContext( UserServiceImplementation.class);
 		UserService service = context.getBean(UserService.class);
-		service.printMessage();
+		System.out.println( service.getMessage1() );
+		System.out.println( service.getMessage2() );
 	}
 }
 

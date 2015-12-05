@@ -12,7 +12,12 @@ public class UserService {
         this.service = service;
     }
 
-    public void printMessage() {
-    	System.out.println(this.service.getMessage());
+    public String getMessage1() {
+    	return this.service.getMessage1();
     }
+    
+    public String getMessage2() {
+    	return this.service.getMessage2();
+    }
+    
 }

@@ -8,10 +8,13 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class UserServiceImplementation {
 	@Bean
-	UserServiceInterface mockMessageService() {
+	UserServiceInterface messageService() {
 		return new UserServiceInterface() {
-			public String getMessage() {
-				return "Hello World!";
+			public String getMessage1() {
+				return "Message Call 1";
+			}
+			public String getMessage2() {
+				return "Message Call 2";
 			}
 		};
 	}
