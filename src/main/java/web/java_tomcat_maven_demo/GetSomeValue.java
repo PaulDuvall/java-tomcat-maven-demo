@@ -1,4 +1,4 @@
-package web.webap;
+package web.java_tomcat_maven_demo;
 
 public class GetSomeValue {
 

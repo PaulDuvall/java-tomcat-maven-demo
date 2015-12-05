@@ -1,4 +1,4 @@
-package web.webap.servlets.user;
+package web.java_tomcat_maven_demo.servlets.user;
 
 import java.io.IOException;
 import java.io.PrintWriter;

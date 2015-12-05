@@ -1,4 +1,4 @@
-package web.webap.nosql;
+package web.java_tomcat_maven_demo.nosql;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

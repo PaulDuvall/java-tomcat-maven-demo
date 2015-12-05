@@ -8,7 +8,7 @@
 	
 	<servlet>
 	  <servlet-name>jsonTestServlet</servlet-name>
-	  <servlet-class>web.webap.servlets.ajax.JsonTestServlet</servlet-class>
+	  <servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonTestServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -21,7 +21,7 @@
 	
 	<servlet>
 	  <servlet-name>jsonMapDBMessageServlet</servlet-name>
-	  <servlet-class>web.webap.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
+	  <servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -38,7 +38,7 @@
 	
 	<servlet>
 	  <servlet-name>loginServlet</servlet-name>
-	  <servlet-class>web.webap.servlets.user.LoginServlet</servlet-class>
+	  <servlet-class>web.java_tomcat_maven_demo.servlets.user.LoginServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -47,7 +47,7 @@
 	</servlet-mapping>	
 	<servlet>
 	  <servlet-name>logoutServlet</servlet-name>
-	  <servlet-class>web.webap.servlets.user.LogoutServlet</servlet-class>
+	  <servlet-class>web.java_tomcat_maven_demo.servlets.user.LogoutServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
