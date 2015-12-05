@@ -5,6 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import web.java_tomcat_maven_demo.services.UserService;
+import web.java_tomcat_maven_demo.services.UserServiceImplementation;
 
 public class UserServiceImplementationTest {
 
@@ -19,9 +24,9 @@ public class UserServiceImplementationTest {
 	@Test
 	public void test() {
 		
-//		ApplicationContext context = new AnnotationConfigApplicationContext( UserServiceImplementation.class);
-//		UserService service = context.getBean(UserService.class);
-//		service.printMessage();
+		ApplicationContext context = new AnnotationConfigApplicationContext( UserServiceImplementation.class);
+		UserService service = context.getBean(UserService.class);
+		service.printMessage();
 		
 
 		// fail("Not yet implemented");

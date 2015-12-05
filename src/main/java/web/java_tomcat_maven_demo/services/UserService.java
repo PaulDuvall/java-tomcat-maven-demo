@@ -14,6 +14,6 @@ public class UserService {
     }
 
     public void printMessage() {
-        // System.out.println(this.service.getMessage());
+    	System.out.println(this.service.getMessage());
     }
 }
