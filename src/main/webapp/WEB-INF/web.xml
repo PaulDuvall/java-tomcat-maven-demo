@@ -1,61 +1,52 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
- 
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/dtd/web-app_2_3.dtd" >
+
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  
-	
+	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
-	  <servlet-name>jsonTestServlet</servlet-name>
-	  <servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonTestServlet</servlet-class>
+		<servlet-name>jsonTestServlet</servlet-name>
+		<servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonTestServlet</servlet-class>
 	</servlet>
-	
 	<servlet-mapping>
-	  <servlet-name>jsonTestServlet</servlet-name>
-	  <url-pattern>/test</url-pattern>
+		<servlet-name>jsonTestServlet</servlet-name>
+		<url-pattern>/test</url-pattern>
 	</servlet-mapping>
-	
-	
-	
-	
 	<servlet>
-	  <servlet-name>jsonMapDBMessageServlet</servlet-name>
-	  <servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
+		<servlet-name>jsonMapDBMessageServlet</servlet-name>
+		<servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
 	</servlet>
-	
 	<servlet-mapping>
-	  <servlet-name>jsonMapDBMessageServlet</servlet-name>
-	  <url-pattern>/map</url-pattern>
+		<servlet-name>jsonMapDBMessageServlet</servlet-name>
+		<url-pattern>/map</url-pattern>
 	</servlet-mapping>
-	
-	
-	
-	
-	
-	
-	
-	
 	<servlet>
-	  <servlet-name>loginServlet</servlet-name>
-	  <servlet-class>web.java_tomcat_maven_demo.servlets.user.LoginServlet</servlet-class>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>web.java_tomcat_maven_demo.servlets.user.LoginServlet</servlet-class>
 	</servlet>
-	
 	<servlet-mapping>
-	  <servlet-name>loginServlet</servlet-name>
-	  <url-pattern>/LoginServlet</url-pattern>
-	</servlet-mapping>	
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
 	<servlet>
-	  <servlet-name>logoutServlet</servlet-name>
-	  <servlet-class>web.java_tomcat_maven_demo.servlets.user.LogoutServlet</servlet-class>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>web.java_tomcat_maven_demo.servlets.user.LogoutServlet</servlet-class>
 	</servlet>
-	
 	<servlet-mapping>
-	  <servlet-name>logoutServlet</servlet-name>
-	  <url-pattern>/LogoutServlet</url-pattern>
-	</servlet-mapping>		
-	
-	
-	  
-  
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>web.java_tomcat_maven_demo.restapi</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jersey-serlvet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
 </web-app>
