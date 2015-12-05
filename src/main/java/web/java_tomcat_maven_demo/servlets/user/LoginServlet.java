@@ -10,10 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
- 
-/**
- * Servlet implementation class LoginServlet
- */
 
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -28,9 +24,6 @@ public class LoginServlet extends HttpServlet {
         String pwd = request.getParameter("pwd");
          
         if(userID.equals(user) && password.equals(pwd)){
-        	
-        	
-        	
             HttpSession session = request.getSession();
             session.setAttribute("user", "asdfsaf");
             //setting session to expiry in 30 mins
@@ -41,14 +34,10 @@ public class LoginServlet extends HttpServlet {
             String encodedURL = response.encodeRedirectURL("loginsuccess.jsp");
             response.sendRedirect(encodedURL);
         }else{
-        	
-        	
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.jsp");
             PrintWriter out= response.getWriter();
             out.println("<font color=red>Either user name or password is wrong.</font>");
             rd.include(request, response);
         }
- 
     }
- 
 }

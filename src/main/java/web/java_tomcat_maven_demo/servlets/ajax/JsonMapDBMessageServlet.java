@@ -15,9 +15,6 @@ import web.java_tomcat_maven_demo.nosql.MapDataCache;
 import com.google.gson.Gson;
 
 public class JsonMapDBMessageServlet extends HttpServlet { 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -29,7 +26,6 @@ public class JsonMapDBMessageServlet extends HttpServlet {
 	    
 	    for(Object string : keySet) {
 	    	options.put(string.toString(), string.toString());
-	    	
 	    }
 	    
 	    String json = new Gson().toJson(options);
@@ -45,6 +41,4 @@ public class JsonMapDBMessageServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.doPost(req, resp);
 	}
-
-
 }

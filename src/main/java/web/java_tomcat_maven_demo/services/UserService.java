@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserService {
-
     final private UserServiceInterface service;
 
     @Autowired

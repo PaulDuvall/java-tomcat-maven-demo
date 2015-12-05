@@ -16,7 +16,6 @@ public class MapDataCache {
 	private DB getDb() {
 		return this.db;
 	}
-	
 	private static MapDataCache getInstance() {
 		if(instance != null) 
 			return instance; 
@@ -36,22 +35,15 @@ public class MapDataCache {
 	}
 	
 	public static void putDataStampKey(String map, String key, String value) {
-		
 		SimpleDateFormat localDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 		//Current Date Time in Local Timezone
 		// System.out.println("Current Date and Time in local timezone: " + localDateFormat.format( new Date()));
 		//Read more: http://javarevisited.blogspot.com/2012/01/get-current-date-timestamps-java.html#ixzz3ZljoiTMx
-			
-			
+				
 		getInstance().getDb().getTreeMap(map).put(key + " " +localDateFormat.format( new Date()),value);
 		getInstance().getDb().commit();
 	}
-	
-	
-
-		
-		
 	
 	public static Object getValue(String map, String key) {
 		return getInstance().getDb().getTreeMap(map).get(key);

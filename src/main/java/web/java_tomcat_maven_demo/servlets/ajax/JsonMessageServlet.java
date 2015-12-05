@@ -20,13 +20,11 @@ public class JsonMessageServlet extends HttpServlet {
 	    Map<String, String> options = new LinkedHashMap<String, String>();
 	    options.put("message", "Welcome to the website!");
 
-
 	    String json = new Gson().toJson(options);
 
 	    resp.setContentType("application/json");
 	    resp.setCharacterEncoding("UTF-8");
 	    resp.getWriter().write(json);	    
-
 	}
 	
 	@Override

@@ -14,10 +14,6 @@ import web.java_tomcat_maven_demo.nosql.MapDataCache;
 import com.google.gson.Gson;
 
 public class JsonTestServlet extends HttpServlet {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Override
