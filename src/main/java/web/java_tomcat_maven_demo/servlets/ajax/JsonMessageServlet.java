@@ -3,7 +3,6 @@ package web.java_tomcat_maven_demo.servlets.ajax;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
