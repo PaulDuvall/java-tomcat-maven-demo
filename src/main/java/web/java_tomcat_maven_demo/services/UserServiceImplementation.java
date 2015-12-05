@@ -10,11 +10,11 @@ public class UserServiceImplementation {
 	@Bean
 	UserServiceInterface messageService() {
 		return new UserServiceInterface() {
-			public String getMessage1() {
-				return "Message Call 1";
+			public String getAdminUser() {
+				return "admin";
 			}
-			public String getMessage2() {
-				return "Message Call 2";
+			public String getSuperAdminUser() {
+				return "superadmin";
 			}
 		};
 	}

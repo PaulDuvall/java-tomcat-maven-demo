@@ -12,12 +12,12 @@ public class UserService {
         this.service = service;
     }
 
-    public String getMessage1() {
-    	return this.service.getMessage1();
+    public String getAdminUser() {
+    	return this.service.getAdminUser();
     }
     
-    public String getMessage2() {
-    	return this.service.getMessage2();
+    public String getSuperAdminUser() {
+    	return this.service.getSuperAdminUser();
     }
     
 }
