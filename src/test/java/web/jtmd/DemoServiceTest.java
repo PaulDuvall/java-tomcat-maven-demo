@@ -1,4 +1,4 @@
-package web.java_tomcat_maven_demo;
+package web.jtmd;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;

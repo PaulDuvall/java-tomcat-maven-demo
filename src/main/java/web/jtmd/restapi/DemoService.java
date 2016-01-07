@@ -1,4 +1,4 @@
-package web.java_tomcat_maven_demo.restapi;
+package web.jtmd.restapi;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;

@@ -1,14 +1,15 @@
-package web.java_tomcat_maven_demo.servlets.ajax;
+package web.jtmd.servlets.ajax;
 
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import web.java_tomcat_maven_demo.nosql.MapDataCache;
+import web.jtmd.nosql.MapDataCache;
 
 import com.google.gson.Gson;
 

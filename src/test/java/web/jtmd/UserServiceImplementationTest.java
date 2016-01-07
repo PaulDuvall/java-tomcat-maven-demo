@@ -1,10 +1,11 @@
-package web.java_tomcat_maven_demo;
+package web.jtmd;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.testng.annotations.Test;
-import web.java_tomcat_maven_demo.services.UserService;
-import web.java_tomcat_maven_demo.services.UserServiceBeanWrapper;
+
+import web.jtmd.services.UserService;
+import web.jtmd.services.UserServiceBeanWrapper;
 
 public class UserServiceImplementationTest {
 	@Test

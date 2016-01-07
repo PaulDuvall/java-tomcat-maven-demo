@@ -1,4 +1,4 @@
-package web.java_tomcat_maven_demo.servletfilters;
+package web.jtmd.servletfilters;
 
 import java.io.IOException;
 import java.util.Enumeration;

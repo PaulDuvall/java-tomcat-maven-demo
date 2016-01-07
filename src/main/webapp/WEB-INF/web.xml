@@ -6,7 +6,7 @@
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
 		<servlet-name>jsonTestServlet</servlet-name>
-		<servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonTestServlet</servlet-class>
+		<servlet-class>web.jtmd.servlets.ajax.JsonTestServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>jsonTestServlet</servlet-name>
@@ -14,7 +14,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>jsonMapDBMessageServlet</servlet-name>
-		<servlet-class>web.java_tomcat_maven_demo.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
+		<servlet-class>web.jtmd.servlets.ajax.JsonMapDBMessageServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>jsonMapDBMessageServlet</servlet-name>
@@ -22,7 +22,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>loginServlet</servlet-name>
-		<servlet-class>web.java_tomcat_maven_demo.servlets.user.LoginServlet</servlet-class>
+		<servlet-class>web.jtmd.servlets.user.LoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>loginServlet</servlet-name>
@@ -30,7 +30,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>logoutServlet</servlet-name>
-		<servlet-class>web.java_tomcat_maven_demo.servlets.user.LogoutServlet</servlet-class>
+		<servlet-class>web.jtmd.servlets.user.LogoutServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>logoutServlet</servlet-name>
@@ -41,7 +41,7 @@
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>com.sun.jersey.config.property.packages</param-name>
-			<param-value>web.java_tomcat_maven_demo.restapi</param-value>
+			<param-value>web.jtmd.restapi</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -51,11 +51,11 @@
 	</servlet-mapping>
 	<filter>
 		<filter-name>RequestLoggingFilter</filter-name>
-		<filter-class>web.java_tomcat_maven_demo.servletfilters.RequestLoggingFilter</filter-class>
+		<filter-class>web.jtmd.servletfilters.RequestLoggingFilter</filter-class>
 	</filter>
 	<filter>
 		<filter-name>AuthenticationFilter</filter-name>
-		<filter-class>web.java_tomcat_maven_demo.servletfilters..AuthenticationFilter</filter-class>
+		<filter-class>web.jtmd.servletfilters..AuthenticationFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>RequestLoggingFilter</filter-name>

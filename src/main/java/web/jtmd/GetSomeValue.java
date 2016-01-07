@@ -1,4 +1,4 @@
-package web.java_tomcat_maven_demo;
+package web.jtmd;
 
 public class GetSomeValue {
 	public String getSomeValue() {

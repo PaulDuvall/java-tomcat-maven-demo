@@ -1,32 +1,24 @@
-package web.java_tomcat_maven_demo.servlets.ajax;
+package web.jtmd.servlets.ajax;
 
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.NavigableSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import web.java_tomcat_maven_demo.nosql.MapDataCache;
-
 import com.google.gson.Gson;
 
-public class JsonMapDBMessageServlet extends HttpServlet { 
-	private static final long serialVersionUID = 1L;
+public class JsonMessageServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 
-		NavigableSet<Object> keySet = MapDataCache.getKeySet("testMap");	
 	    Map<String, String> options = new LinkedHashMap<String, String>();
-	    
-	    for(Object string : keySet) {
-	    	options.put(string.toString(), string.toString());
-	    }
-	    
+	    options.put("message", "Welcome to the website!");
+
 	    String json = new Gson().toJson(options);
 
 	    resp.setContentType("application/json");

@@ -1,4 +1,4 @@
-package web.java_tomcat_maven_demo.services;
+package web.jtmd.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
